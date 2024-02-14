@@ -1,5 +1,6 @@
-const mysql = require('mysql2/promise');
-module.exports = async function (momo) {
+const mysql = require('mysql2/promise'); 
+
+module.exports = async function () {
     try {
         const connection = await mysql.createConnection({
             host: process.env.DB_HOST,
@@ -16,4 +17,4 @@ module.exports = async function (momo) {
     } catch (error) {
         console.log(error);
     }
-}
+} 

@@ -1,6 +1,6 @@
 const index = require('../index'); 
-const {momotoken} = require('../config.json');
 const Events = require('../Handlers/Events');
+const {momotoken} = require('../config.json');
 const eventos = require('../Handlers/eventos');
 const Commands = require('../Handlers/commands');
 const getFiles = require('../Handlers/getFiles');

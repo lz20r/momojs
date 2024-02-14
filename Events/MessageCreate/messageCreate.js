@@ -1,32 +1,11 @@
-const client = require("../../index");
 const Prefix = require("../../config.json");
 require("../../Handlers/commands");
 const { EmbedBuilder } = require("discord.js");
-
-// client.on("messageCreate", async (message) => {
-
-//   if(message.channel.type === 'dm') return;
-//   if(message.author.bot) return;
-
-//   let prefix = config.prefix;
-
-//   if(!message.content.startsWith(prefix)) return;
-
-//   const args = message.content.slice(prefix.length).trim().split(/ +/g);
-//   const command = args.shift().toLowerCase();
-   
-//  let cmd = client.commands.find((c) => c.name === command || c.alias && c.alias.includes(command));
-    
-  
-//   if(cmd){
-//     cmd.execute(client, message, args, prefix);
-//   }
-
-// });
-
+const momo = require("../../core/client");
+ 
  
 momo.on("messageCreate", async (message) => {
-    if (message.channel.type === 'dm' || message.author.bot) {
+    if (message.channel.type === 'dm' || message.author.bot) { 
         return;
     } 
     const [row] = await momo.db.query(`SELECT prefix FROM prefijos WHERE guildId = ?`, [message.guild.id])
@@ -47,12 +26,12 @@ momo.on("messageCreate", async (message) => {
 
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
-    let cmd = client.commands.find((c) => c.name === command || (c.alias && c.alias.includes(command)));
+    let cmd = momo.commands.find((c) => c.name === command || (c.alias && c.alias.includes(command)));
 
     if (cmd) {
         message.delete();
         message.prefix = prefix
-        cmd.execute(message, args, client);
+        cmd.execute(message, args, momo);
         const logChannel = message.guild.channels.cache.get(logChannelId);
         if (logChannel) {
             const logEmbed = new EmbedBuilder()

@@ -1,5 +1,5 @@
 const momoClient = require('./Momo');
-const momo = new momoClient();
+const Momo = new momoClient();
 
-module.exports = momo;
+module.exports = Momo;
  
