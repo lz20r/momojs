@@ -44,5 +44,4 @@ module.exports = class momoClient extends Client {
         this.login(`${momotoken}`);  
 
     } 
-}
- 
+} 
