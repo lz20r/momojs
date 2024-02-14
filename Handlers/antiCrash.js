@@ -1,4 +1,4 @@
-module.exports = (client) => {
+module.exports = (antiCrash) => {
     process.removeAllListeners();
    
        process.on('unhandledRejection', (reason, p) => {
@@ -11,7 +11,7 @@ module.exports = (client) => {
        });
        process.on('uncaughtExceptionMonitor', (err, origin) => {
            console.log(' [antiCrash] :: uncaughtExceptionMonitor'.grey);
-           console.log(err, origin+ "".grey);
+           console.log(err, origin+ "".grey); 
        });
        process.on('multipleResolves', () => {
        });

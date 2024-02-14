@@ -1,7 +1,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const { REST, Routes } = require("discord.js");
-const { clientId, token } = require("./config.json");
+const { momoID, token } = require("./config.json");
 
 const commands = [];
 const slashcommandsFiles = fs.readdirSync(`./Slashcmd`).forEach((subcarpetas) => {
@@ -17,7 +17,7 @@ const rest = new REST({ version: "10" }).setToken(token);
 
 async function createSlash() {
   try {
-    await rest.put(Routes.applicationCommands(clientId), {
+    await rest.put(Routes.applicationCommands(momoID), {
       body: commands
     });
     console.log("Slash - Commands agregados".green);

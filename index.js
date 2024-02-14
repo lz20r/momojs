@@ -1,12 +1,11 @@
-const { Client, ClientPresence } = require("discord.js");
-const client = new Client({ intents: [3276799] });
-const { token } = require("./config.json");
+const {momo} = require("./core/client"); 
+const {momotoken} = require("./config.json");
 
-module.exports = client;
+module.exports = momo;
 
 require("colors")
 require("./Handlers");
 require("./slashcommands");
-require("./Handlers/antiCrash")(client)
+require("./Handlers/antiCrash")(momo);
 
-client.login(token);
+momo.login(momotoken); 

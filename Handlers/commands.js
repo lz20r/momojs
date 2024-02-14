@@ -1,21 +1,22 @@
 const { Collection } = require("discord.js");
 const { getFiles } = require("./getFiles");
+const {momo} = require("../core/client");
 
-module.exports = async (client) => {
-  client.commands = new Collection();
-  client.slashcommands = new Collection();
+module.exports = async (momo) => {
+  momo.commands = new Collection();
+  momo.slashcommands = new Collection();
 
   const commandFiles = getFiles("Comandos");
   const slashcommandsFiles = getFiles("Slashcmd");
 
   for (const files of commandFiles) {
     const command = require(files);
-    client.commands.set(command.name, command);
+    momo.commands.set(command.name, command);
   }
 
   for (const file of slashcommandsFiles) {
     const slash = require(file);
-    client.slashcommands.set(slash.data.name, slash);
+    momo.slashcommands.set(slash.data.name, slash);
   }
     console.log("Comandos cargados".green);
 };

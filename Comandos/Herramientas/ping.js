@@ -4,11 +4,11 @@ module.exports = {
     name: 'ping',
     alias: [],
 
- async execute(client, message, args) {
+ async execute(momo, message, args) {
 
     const EmbedPing = new EmbedBuilder()
         .setTitle('🏓 ¡Pong!')
-        .setDescription(`*Mi ping es de* **\`${client.ws.ping}ms\`**`)
+        .setDescription(`*Mi ping es de* **\`${momo.ws.ping}ms\`**`)
         .setColor("#2b2d31")
 
         const EmbedCal = new EmbedBuilder()

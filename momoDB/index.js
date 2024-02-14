@@ -1,5 +1,5 @@
 const mysql = require('mysql2/promise');
-module.exports = async function (client) {
+module.exports = async function (momo) {
     try {
         const connection = await mysql.createConnection({
             host: process.env.DB_HOST,
@@ -10,7 +10,7 @@ module.exports = async function (client) {
         })
         connection.connect();
         console.log(("MySQL CONECTION STATUS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓".cyan))
-        console.log("┃ ".cyan + `💭  ${client.user.username}: [INFO]  Connected to MySQLDB`.bgCyan + " ┃".cyan);
+        console.log("┃ ".cyan + `💭  ${momo .user.username}: [INFO]  Connected to MySQLDB`.bgCyan + " ┃".cyan);
         console.log(("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛".cyan))
         return connection;
     } catch (error) {

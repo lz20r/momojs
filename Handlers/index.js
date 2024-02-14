@@ -1,5 +1,5 @@
-const client = require("../index");
+const momo = require("../core/client");
 
-require("./commands.js")(client);
-require("./Events.js")(client);
-require("./antiCrash.js")(client);
+require("./commands.js")(momo);
+require("./Events.js")(momo);
+require("./antiCrash.js")(momo);

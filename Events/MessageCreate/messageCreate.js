@@ -25,11 +25,11 @@ const { EmbedBuilder } = require("discord.js");
 // });
 
  
-client.on("messageCreate", async (message) => {
+momo.on("messageCreate", async (message) => {
     if (message.channel.type === 'dm' || message.author.bot) {
         return;
     } 
-    const [row] = await client.db.query(`SELECT prefix FROM prefijos WHERE guildId = ?`, [message.guild.id])
+    const [row] = await momo.db.query(`SELECT prefix FROM prefijos WHERE guildId = ?`, [message.guild.id])
 
     const prefix = row.length > 0 ? row[0].prefix : Prefix
 
