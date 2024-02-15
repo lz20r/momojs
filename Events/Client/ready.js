@@ -3,11 +3,12 @@ const { mysql } = require("../../momoDB/index");
 const momo = require("../../core/client");
  
 momo.on("ready", async () => {
-    try { 
+    try {  
         mysql.set("strictQuery", false);
         await mysql.connection.execute("SET GLOBAL sql_mode = 'NO_ENGINE_SUBSTITUTION'", {useNewUrlParser: true, useUnifiedTopology: true}); 
+        console.log("Conexión con MYSQL establecida".green);
     } catch (error) {
-        console.log("Error al establecer conexion con MYSQL".red); 
+        console.log("Error al establecer conexion con MYSQL".red  + "\n" + error); 
     }   
     
     momo.user.setPresence({
@@ -27,7 +28,7 @@ momo.on("ready", async () => {
         `${momo.user.username} active in ${momo.channels.cache.size} canal/s`,
         `${momo.user.username} looking ${momo.guilds.cache.reduce((a, g) => a + g.memberCount, 0)} user/s`,
     ];
-    let index = 0;
+    let index = 0; 
     const randTime = Math.floor(Math.random() * 5) + 1;
     setTimeout(() => {
         setInterval(() => {

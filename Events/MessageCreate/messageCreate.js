@@ -1,18 +1,16 @@
-const Prefix = require("../../config.json");
+const {Prefix} = require("../../config.json");
 require("../../Handlers/commands");
 const { EmbedBuilder } = require("discord.js");
 const momo = require("../../core/client");
- 
  
 momo.on("messageCreate", async (message) => {
     if (message.channel.type === 'dm' || message.author.bot) { 
         return;
     } 
     const [row] = await momo.db.query(`SELECT prefix FROM prefijos WHERE guildId = ?`, [message.guild.id])
-
+ 
     const prefix = row.length > 0 ? row[0].prefix : Prefix
 
-    //const prefix = await db.get(`prefix.${message.guild.id}`) || Prefix;
     const logChannelId = "1176225809976000563"; // ID del canal de registro
 
     if (message.content.toLowerCase().startsWith("prefix") && message.author.id == "1033160523044376616") {
