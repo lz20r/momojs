@@ -1,6 +1,7 @@
 {
-  "name": "momo",
+  "name": "momo-js",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "cls && nodemon index.js"
@@ -16,10 +17,7 @@
   "dependencies": {
     "colors": "^1.4.0",
     "discord.js": "^14.14.1",
-    "fs": "^0.0.1-security",
-    "mongoose": "^8.0.2",
     "mysql2": "^3.9.1",
-    "nodemon": "^3.0.3"
-  },
-  "description": ""
+    "openai": "^4.28.0"
+  }
 }

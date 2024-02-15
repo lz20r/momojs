@@ -1,5 +1,6 @@
 const momoClient = require('./Momo');
-const Momo = new momoClient();
-
+const {momoToken} = require('../config.json');
+const Momo = new momoClient(); 
+Momo.login(momoToken);
 module.exports = Momo;
  

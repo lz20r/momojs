@@ -1,6 +1,6 @@
 const { ActivityType } = require("discord.js");
 const { mysql } = require("../../momoDB/index"); 
-const momo = require("../../core/Client");
+const momo = require("../../core/client");
  
 momo.on("ready", async () => {
     try { 

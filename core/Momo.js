@@ -1,6 +1,6 @@
 const index = require('../index'); 
 const Events = require('../Handlers/Events');
-const {momotoken} = require('../config.json');
+const {momoToken} = require('../config.json');
 const eventos = require('../Handlers/eventos');
 const Commands = require('../Handlers/commands');
 const getFiles = require('../Handlers/getFiles');
@@ -37,11 +37,11 @@ module.exports = class momoClient extends Client {
         await Events.execute(this);
         await getFiles.execute(this);
         await SlashCommands.execute(this);
-        await Commands.execute(this);
+        await Commands.execute(this); 
         eventos.execute(this);  
         commandUserLoader.execute(this);
         commandMessageLoader.execute(this);
-        this.login(`${momotoken}`);  
+        this.login(`${momoToken}`);  
 
     } 
 } 

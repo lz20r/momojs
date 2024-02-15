@@ -1,7 +1,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
-const { REST, Routes } = require("discord.js");
-const { momoID, momoToken } = require("./core/Client");
+const { REST, Routes } = require("discord.js"); 
+const {momoToken, momoID} = require("./config.json");
 
 const commands = [];
 const slashcommandsFiles = fs.readdirSync(`./Slashcmd`).forEach((subcarpetas) => {

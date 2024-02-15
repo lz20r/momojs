@@ -1,5 +1,5 @@
 const momo = require("./core/client"); 
-const momotoken = require("./config.json");
+const {momoToken} = require("./config.json");
 
 module.exports = momo;
 
@@ -8,4 +8,4 @@ require("./Handlers");
 require("./slashcommands");
 require("./Handlers/antiCrash")(momo);
 
-momo.login(momotoken); 
+momo.login(momoToken); 
