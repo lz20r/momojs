@@ -1,7 +1,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const { REST, Routes } = require("discord.js");
-const { momoID, token } = require("./config.json");
+const { momoID, momoToken } = require("./core/Client");
 
 const commands = [];
 const slashcommandsFiles = fs.readdirSync(`./Slashcmd`).forEach((subcarpetas) => {
@@ -13,7 +13,7 @@ const slashcommandsFiles = fs.readdirSync(`./Slashcmd`).forEach((subcarpetas) =>
   }
 });
 
-const rest = new REST({ version: "10" }).setToken(token);
+const rest = new REST({ version: "10" }).setToken(momoToken);
 
 async function createSlash() {
   try {

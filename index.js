@@ -1,5 +1,5 @@
-const {momo} = require("./core/client"); 
-const {momotoken} = require("./config.json");
+const momo = require("./core/client"); 
+const momotoken = require("./config.json");
 
 module.exports = momo;
 
