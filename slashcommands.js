@@ -22,8 +22,8 @@ async function createSlash() {
     });
     console.log("Slash - Commands agregados".green);
   } catch (e) {
-    console.error(e);
-  }
+    console.error(e); 
+  } 
 }
 
 createSlash();

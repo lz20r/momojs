@@ -1,14 +1,14 @@
 const { ActivityType } = require("discord.js");
 const { mysql } = require("../../momoDB/index"); 
-const momo = require("../../core/client");
-
+const momo = require("../../core/Client");
+ 
 momo.on("ready", async () => {
     try { 
         mysql.set("strictQuery", false);
         await mysql.connection.execute("SET GLOBAL sql_mode = 'NO_ENGINE_SUBSTITUTION'", {useNewUrlParser: true, useUnifiedTopology: true}); 
     } catch (error) {
         console.log("Error al establecer conexion con MYSQL".red); 
-    }  
+    }   
     
     momo.user.setPresence({
         activities: [
@@ -21,7 +21,7 @@ momo.on("ready", async () => {
     });
     
     const statusArray = [
-        `RAM：${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(1)} %`,
+        `RAM:${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(1)} %`,
         `Today is ${String(new Date()).split(" ", 5).join(" ")}`,
         `${momo.user.username} active in ${momo.guilds.cache.size} server/s`,
         `${momo.user.username} active in ${momo.channels.cache.size} canal/s`,
