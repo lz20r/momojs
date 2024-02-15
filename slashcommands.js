@@ -13,7 +13,7 @@ const slashcommandsFiles = fs.readdirSync(`./Slashcmd`).forEach((subcarpetas) =>
   }
 });
 
-const rest = new REST({ version: "10" }).setToken(token);
+const rest = new REST({ version: "10" }).setToken(nomoToken);
 
 async function createSlash() {
   try {
