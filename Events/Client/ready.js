@@ -1,6 +1,7 @@
 const { ActivityType } = require("discord.js");
 const { mysql } = require("../../momoDB/index"); 
 const momo = require("../../core/client");
+const prefix = require("../../config.json").prefix;
  
 momo.on("ready", async () => {
     try {  
@@ -11,19 +12,19 @@ momo.on("ready", async () => {
         console.log("Error al establecer conexion con MYSQL".red  + "\n" + error); 
     }   
     
+    
     momo.user.setPresence({
         activities: [
             {
-                name: `${momo.user.username}'s 24/7 in  canal/s`,
-                type: ActivityType.Custom,
+                name: `💞・${momo.user.username} active 24/7`, 
+                type: ActivityType.Custom
             },
         ],
         status: "idle",
     });
     
     const statusArray = [
-        `RAM:${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(1)} %`,
-        `Today is ${String(new Date()).split(" ", 5).join(" ")}`,
+        `${momo.user.username}'s RAM:${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(1)} %`,
         `${momo.user.username} active in ${momo.guilds.cache.size} server/s`,
         `${momo.user.username} active in ${momo.channels.cache.size} canal/s`,
         `${momo.user.username} looking ${momo.guilds.cache.reduce((a, g) => a + g.memberCount, 0)} user/s`,
@@ -37,9 +38,9 @@ momo.on("ready", async () => {
             momo.user.setPresence({
                 activities: [{ name: status, type: ActivityType.Custom }],
                 status: "idle",
-            });
+            }); 
             index++;
         }, 6 * 1000);
     }, randTime);
-    console.log('\nLogged as '.white + momo.user.username + ' in '.white + momo.user.presence.status + ' mode'.white);
+    console.log('\n💞・Logged as '.white + momo.user.username + ' in '.white + momo.user.presence.status + ' mode'.white);
 });
