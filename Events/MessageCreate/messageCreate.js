@@ -1,4 +1,4 @@
-const {prefix} = require("../../config.json");
+const {Prefix} = require("../../config.json");
 require("../../Handlers/commands");
 const { EmbedBuilder } = require("discord.js");
 const momo = require("../../core/client");
@@ -7,9 +7,9 @@ momo.on("messageCreate", async (message) => {
     if (message.channel.type === 'dm' || message.author.bot) { 
         return;
     } 
-    // const [row] = await momo.db.query(`SELECT prefix FROM prefijos WHERE guildId = ?`, [message.guild.id])
+    const [row] = await momo.db.query(`SELECT prefix FROM prefijos WHERE guildId = ?`, [message.guild.id])
  
-    // const prefix = row.length > 0 ? row[0].prefix : Prefix;
+    const prefix = row.length > 0 ? row[0].prefix : Prefix;
 
     const logChannelId = "1207946595161743400";  
 
@@ -38,7 +38,7 @@ momo.on("messageCreate", async (message) => {
                 .addFields(
 
                     {
-                        name: 'Usuario',
+                        name: 'Usuario', 
                         value: `${message.author.globalName} [${message.author.tag}]`,
                         inline: true
                     },

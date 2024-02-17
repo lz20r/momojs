@@ -1,16 +1,9 @@
-const { ActivityType } = require("discord.js");
-const { mysql } = require("../../momoDB/index"); 
+const { ActivityType } = require("discord.js"); 
 const momo = require("../../core/client");
 const prefix = require("../../config.json").prefix;
  
 momo.on("ready", async () => {
-    try {  
-        mysql.set("strictQuery", false);
-        await mysql.connection.execute("SET GLOBAL sql_mode = 'NO_ENGINE_SUBSTITUTION'", {useNewUrlParser: true, useUnifiedTopology: true}); 
-        console.log("Conexión con MYSQL establecida".green);
-    } catch (error) {
-        console.log("Error al establecer conexion con MYSQL".red  + "\n" + error); 
-    }   
+    momo.db = await require('../../momoDB')(momo)
     
     
     momo.user.setPresence({
