@@ -26,7 +26,7 @@ module.exports = {
                 const reply = await message.channel.send({ embeds: [replyembed] });
                 setTimeout(() => reply.delete(), 15000);
                 return;
-            } 
+            }  
 
             const embed = new EmbedBuilder()
                 .setTitle(`Prefix History for Server **${message.guild.name}**`)
