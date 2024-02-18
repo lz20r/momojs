@@ -1,4 +1,4 @@
-const {Prefix} = require("../../config.json");
+const {prefix} = require("../../config.json");
 require("../../Handlers/commands");
 const { EmbedBuilder } = require("discord.js");
 const momo = require("../../core/client");
@@ -11,13 +11,11 @@ momo.on("messageCreate", async (message) => {
  
     const prefix = row.length > 0 ? row[0].prefix : Prefix;
 
-    const logChannelId = "1207946595161743400";  
+    const logChannelId = "1204154596864565259";  
 
     if (message.content.toLowerCase().startsWith("prefix") && message.author.id == "1033160523044376616") {
         return message.reply(`My prefix is ${prefix}`);
-    }
-
-
+    } 
     if (!message.content.startsWith(prefix)) {
         return;
     }
@@ -25,45 +23,25 @@ momo.on("messageCreate", async (message) => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     let cmd = momo.commands.find((c) => c.name === command || (c.alias && c.alias.includes(command)));
-
+    server_name = message.guild.name 
+    channel_name = message.channel
+    author_name_id = message.author.id  
+    author_name = message.author.globalName
+    author_tag = message.author
+    command_name = cmd.name 
     if (cmd) {
-        message.delete();
-        message.prefix = prefix
-        cmd.execute(message, args, momo);
+        message.delete(); 
+ 
+        cmd.execute(message, args, momo); 
         const logChannel = message.guild.channels.cache.get(logChannelId);
         if (logChannel) {
             const logEmbed = new EmbedBuilder()
                 .setColor("#c1d5db")
-                .setTitle("Command Executed")
-                .addFields(
-
-                    {
-                        name: 'Usuario', 
-                        value: `${message.author.globalName} [${message.author.tag}]`,
-                        inline: true
-                    },
-
-                    {
-                        name: 'Run CMD',
-                        value: cmd.name,
-                        inline: false
-                    },
-
-                    {
-                        name: 'Canal',
-                        value: message.channel.name,
-                        inline: false
-                    },
-
-                    {
-                        name: 'Servidor',
-                        value: message.guild.name,
-                        inline: false
-                    }
-
-                )
+                .setTitle("`Command Executed`")
+                .setDescription(`Server: **${server_name}**\nChannel: **${channel_name}**\nUser: **${author_name} - ${author_tag}**\nUser ID: **${author_name_id}**\nCommand: **${command_name}**\nPrefix: **${prefix}**`)  
                 .setTimestamp();
             logChannel.send({ content: `<@!1033160523044376616>`, embeds: [logEmbed], allowedMentions: { repliedUser: false } })
-        }
+        } 
     }
 });
+ 

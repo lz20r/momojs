@@ -36,8 +36,7 @@ module.exports = {
                     `**Stacktrace:**\n - \`\`\`${e.stack}\`\`\`\n`
                 )
             message.channel.send({ embeds: [Error] })
-        } finally {
-            console.log(`\n💭  [CMD] ${message.author.globalName} [${message.author.tag}] ha usado el comando ${prefix}${this.name} en el servidor ${message.guild.name}`);
         }
+
     }
 }

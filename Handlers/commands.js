@@ -1,6 +1,7 @@
 const { Collection } = require("discord.js");
 const { getFiles } = require("./getFiles");
 const {momo} = require("../core/client");
+const Momo = require("../core/client");
 
 module.exports = async (momo) => {
   momo.commands = new Collection();
@@ -18,5 +19,5 @@ module.exports = async (momo) => {
     const slash = require(file);
     momo.slashcommands.set(slash.data.name, slash);
   }
-    console.log("Comandos cargados".green);
+    console.log(`💭  [INFO]: momo commandPrefix Loaded`);
 };

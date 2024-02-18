@@ -20,7 +20,7 @@ async function createSlash() {
     await rest.put(Routes.applicationCommands(momoID), {
       body: commands
     });
-    console.log("Slash - Commands agregados".green);
+    console.log(`💭  [INFO]: momo slashCommands Loaded`);
   } catch (e) {
     console.error(e); 
   } 

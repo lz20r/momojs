@@ -3,8 +3,8 @@ const momo = require("../../core/client");
 const prefix = require("../../config.json").prefix;
  
 momo.on("ready", async () => {
-    momo.db = await require('../../momoDB')(momo)
-    
+    momo.db = await require('../../momoDB/momoDB')(momo)
+
     
     momo.user.setPresence({
         activities: [
