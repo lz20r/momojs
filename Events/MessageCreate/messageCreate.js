@@ -1,8 +1,7 @@
-const {prefix} = require("../../config.json");
 require("../../Handlers/commands");
 const { EmbedBuilder } = require("discord.js");
 const momo = require("../../core/client");
- 
+const { Prefix } = require("../../config.json");
 momo.on("messageCreate", async (message) => {
     if (message.channel.type === 'dm' || message.author.bot) { 
         return;
@@ -13,11 +12,20 @@ momo.on("messageCreate", async (message) => {
 
     const logChannelId = "1204154596864565259";  
 
-    if (message.content.toLowerCase().startsWith("prefix") && message.author.id == "1033160523044376616") {
-        return message.reply(`My prefix is ${prefix}`);
+    if (message.content.startsWith(`<@${momo.user.id}>`) || message.content.startsWith(`<@!${momo.user.id}>`)) {
+        embed = new EmbedBuilder()
+            .setColor("#c1d5db")
+            .setDescription( `
+                <a:MT_moonstars:1208777470430674964> heya ${message.author}, my little momo friend\n 
+                are u trying to know my prefix?? i'll show you all my prefixes, 
+                > <a:MT_bluehearts:1208779999700590656> ${momo.user.username} prefix  \`${Prefix}\` 
+                > <a:MT_bluehearts:1208779999700590656> guild prefix \`${prefix}\` 
+                > <a:MT_bluehearts:1208779999700590656> self prefix 
+            `);
+        message.channel.send({ embeds: [embed] }); 
     } 
     if (!message.content.startsWith(prefix)) {
-        return;
+        return; 
     }
 
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
