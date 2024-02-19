@@ -1,12 +1,14 @@
 require("../../Handlers/commands");
 const { EmbedBuilder } = require("discord.js");
 const momo = require("../../core/client");
+const RAM_GET = require('../../core/RAM/RAMGetter');
+const connection = RAM_GET.getDBConnection();
 const { Prefix } = require("../../config.json");
 momo.on("messageCreate", async (message) => {
     if (message.channel.type === 'dm' || message.author.bot) { 
         return;
     } 
-    const [row] = await momo.db.query(`SELECT prefix FROM prefijos WHERE guildId = ?`, [message.guild.id])
+    const [row] = await connection.query(`SELECT prefix FROM prefijos WHERE guildId = ?`, [message.guild.id])
  
     const prefix = row.length > 0 ? row[0].prefix : Prefix;
 

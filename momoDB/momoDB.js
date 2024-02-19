@@ -14,7 +14,6 @@ module.exports = async function() {
         connection.connect(); 
         console.log(`💭  [INFO]: ${momo.user.username} Connected to MySQLDB`); 
         setTimeout(() => {
-            console.log("Leyendo en momoDB")
             RAM_SET.setDBConnection(connection);
             return connection;
         }, 500);

@@ -4,7 +4,6 @@ const {shop} = require('./shopItems.json');
 const fs = require('fs');
 
 setTimeout(() => {
-	console.log("leyengo en shop");
 	const connection = RAM_GET.getDBConnection();
 
 	const createTableCategories = `
@@ -43,8 +42,9 @@ setTimeout(() => {
 						const categoryId = results.insertId;
 						
 						// Iterar sobre subcategorías y elementos
-						for (const [subCategoryName, items] of Object.entries(subCategories)) {
-							items.forEach(item => {
+						for (var [subCategoryName, items] of Object.entries(subCategories)) {
+							return console.log(items[0]);
+							items.shopItems.consumible.food.forEach(item => {
 								const { type, cost, description } = item;
 								const insertItemQuery = 'INSERT INTO Items (category_id, type, cost, description) VALUES (?, ?, ?, ?)';
 								
@@ -52,7 +52,7 @@ setTimeout(() => {
 									if (error) throw error;
 									console.log(`Item insertado: ${type}`);
 								}); 
-							});
+							}).catch(() => { null });
 							subCategoryName = subCategoryName.replace(/\s+/g, '_');
 						}
 					});
