@@ -10,3 +10,4 @@ require("./slashcommands");
 require("./Handlers/antiCrash")(momo);
 
 momo.login(momoToken); 
+  

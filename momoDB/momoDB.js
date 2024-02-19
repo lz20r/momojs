@@ -1,7 +1,8 @@
-const mysql = require('mysql2/promise');  
+const mysql = require('mysql2');  
 const momo = require("../core/client");
+const RAM_SET = require('../core/RAM/RAMSetter');
 
-module.exports = async function () {
+module.exports = async function() {
     try {
         const connection = await mysql.createConnection({
             host: (process.env.DB_HOST),
@@ -12,8 +13,12 @@ module.exports = async function () {
         })
         connection.connect(); 
         console.log(`💭  [INFO]: ${momo.user.username} Connected to MySQLDB`); 
-        return connection;
+        setTimeout(() => {
+            console.log("Leyendo en momoDB")
+            RAM_SET.setDBConnection(connection);
+            return connection;
+        }, 500);
     } catch (error) {
         console.log(error);
-    }
+    } 
 } 

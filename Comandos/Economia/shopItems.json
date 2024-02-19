@@ -1,0 +1,1424 @@
+{
+    "shopItems": {
+        "consumible":{
+            "food": [
+                {
+                    "type": "Apple",
+                    "cost": 10,
+                    "description": "Una manzana fresca y jugosa que restaura poco de salud"
+                },
+                {
+                    "type": "Carrot",
+                    "cost": 15,
+                    "description": "Una zanahoria crujiente que restaura poco de salud"
+                },
+                {
+                    "type": "Meat",
+                    "cost": 20,
+                    "description": "trozo de carne cocida que restaura poco de salud"
+                },
+                {
+                    "type": "Fish",
+                    "cost": 25,
+                    "description": "pescado fresco que restaura poco de salud"
+                },
+                {
+                    "type": "Mushroom",
+                    "cost": 30,
+                    "description": "hongo comestible que restaura poco de salud"
+                },
+                {
+                    "type": "Bread",
+                    "cost": 35,
+                    "description": "trozo de pan recién horneado que restaura poco de salud"
+                },
+                {
+                    "type": "Cheese",
+                    "cost": 40,
+                    "description": "trozo de queso que restaura poco de salud"
+                },
+                {
+                    "type": "Honey",
+                    "cost": 45,
+                    "description": "tarro de miel que restaura poco de salud"
+                },
+                {
+                    "type": "Candy",
+                    "cost": 50,
+                    "description": "caramelo dulce que restaura poco de salud"
+                },
+                {
+                    "type": "Chocolate",
+                    "cost": 55,
+                    "description": "trozo de chocolate que restaura poco de salud"
+                },
+                {
+                    "type": "Ice Cream",
+                    "cost": 60,
+                    "description": "helado refrescante que restaura poco de salud"
+                },
+                {
+                    "type": "Cake",
+                    "cost": 65,
+                    "description": "trozo de pastel que restaura poco de salud"
+                },
+                {
+                    "type": "Pizza",
+                    "cost": 70,
+                    "description": "Una porción de pizza que restaura poco de salud"
+                },
+                {
+                    "type": "Pasta",
+                    "cost": 75,
+                    "description": "plato de pasta que restaura poco de salud"
+                },
+                {
+                    "type": "Sushi",
+                    "cost": 80,
+                    "description": "plato de sushi que restaura poco de salud"
+                },
+                {
+                    "type": "Salad",
+                    "cost": 85,
+                    "description": "Una ensalada fresca que restaura poco de salud"
+                },
+                {
+                    "type": "Soup",
+                    "cost": 90,
+                    "description": "plato de sopa caliente que restaura poco de salud"
+                },
+                {
+                    "type": "Stew",
+                    "cost": 95,
+                    "description": "guiso casero que restaura poco de salud"
+                },
+                {
+                    "type": "Curry",
+                    "cost": 100,
+                    "description": "plato de curry que restaura poco de salud"
+                },
+                {
+                    "type": "Fried Rice",
+                    "cost": 105,
+                    "description": "plato de arroz frito que restaura poco de salud"
+                },
+                {
+                    "type": "Ramen",
+                    "cost": 110,
+                    "description": "plato de ramen que restaura poco de salud"
+                },
+                {
+                    "type": "Donut",
+                    "cost": 115,
+                    "description": "donut que restaura poco de salud"
+                },
+                {
+                    "type": "Pancake",
+                    "cost": 120,
+                    "description": "pastel de pan con miga que restaura poco de salud"
+                },
+                {
+                    "type": "Popcorn",
+                    "cost": 125,
+                    "description": "palomitas de popcorn que restaura poco de salud"
+                },
+                {
+                    "type": "Cupcake",
+                    "cost": 130,
+                    "description": "cupcake que restaura poco de salud"
+                }
+            ]
+        },     
+        "healing": {
+            "potions": [ 
+            {
+                "type": "Potion of Health",
+                "cost": 50,
+                "description": "Una poción mágica que restaura completamente tu salud"
+            },
+            {
+                "type": "Potion of Energy",
+                "cost": 75,
+                "description": "Una poción mágica que restaura completamente tu energía"
+            },
+            {
+                "type": "Potion of Regeneration",
+                "cost": 100,
+                "description": "Una poción mágica que restaura completamente la salud de tu mascota"
+            },
+            {
+                "type": "Magic Berries",
+                "cost": 50,
+                "description": "Bayas mágicas que pueden aumentar la salud de tu mascota"
+            },
+            {
+                "type": "Elixir of Vitality",
+                "cost": 75,
+                "description": "potente elixir que restaura completamente la energía de tu mascota"
+            },
+            {
+                "type": "Elixir of Wisdom",
+                "cost": 100,
+                "description": "potente elixir que restaura completamente la salud de tu mascota"
+            },
+            {
+                "type": "Elixir of Strength",
+                "cost": 150,
+                "description": "potente elixir que restaura completamente la fuerza de tu mascota"
+            },
+            {
+                "type": "Elixir of Agility",
+                "cost": 200,
+                "description": "potente elixir que restaura completamente la destreza de tu mascota"
+            },
+            {
+                "type": "Elixir of Intelligence",
+                "cost": 250,
+                "description": "potente elixir que restaura completamente la inteligencia de tu mascota"
+            },
+            {
+                "type": "Elixir of Luck",
+                "cost": 300,
+                "description": "potente elixir que restaura completamente la suerte de tu mascota"
+            },
+            {
+                "type": "Elixir of Defense",
+                "cost": 350,
+                "description": "potente elixir que restaura completamente la defensa de tu mascota"
+            },
+            {
+                "type": "Elixir of Speed",
+                "cost": 400,
+                "description": "potente elixir que restaura completamente la velocidad de tu mascota"
+            },
+            {
+                "type": "Elixir of Vitality",
+                "cost": 450,
+                "description": "potente elixir que restaura completamente la fuerza de tu mascota"
+            } 
+        ]
+        },
+        "pets & creatures": {
+            "pets": [
+                {
+                    "type": "Cat",
+                    "cost": 50,
+                    "description": "Una gatita"
+                },
+                {
+                    "type": "Dog",
+                    "cost": 75,
+                    "description": "perro"
+                },
+                {
+                    "type": "Rabbit",
+                    "cost": 100,
+                    "description": "conejo"
+                },
+                {
+                    "type": "Horse",
+                    "cost": 150,
+                    "description": "caballo"
+                },
+                {
+                    "type": "Sheep",
+                    "cost": 200,
+                    "description": "Una oveja"
+                },
+                {
+                    "type": "Cow",
+                    "cost": 250,
+                    "description": "Una vaca"
+                },
+                {
+                    "type": "Pig",
+                    "cost": 300,
+                    "description": "cerdo"
+                },
+                {
+                    "type": "Chicken",
+                    "cost": 350,
+                    "description": "pollo"
+                },
+                {
+                    "type": "Goat",
+                    "cost": 400,
+                    "description": "cabrito"
+                },
+                {
+                    "type": "Monkey",
+                    "cost": 450,
+                    "description": "mono"
+                },
+                {
+                    "type": "Turtle",
+                    "cost": 500,
+                    "description": "tiburón"
+                },
+                {
+                    "type": "Penguin",
+                    "cost": 550,
+                    "description": "pinguino"
+                },
+                {
+                    "type": "Frog",
+                    "cost": 600,
+                    "description": "rana"
+                },
+                {
+                    "type": "Duck",
+                    "cost": 650,
+                    "description": "pato"
+                },
+                {
+                    "type": "Parrot",
+                    "cost": 700,
+                    "description": "loro"
+                },
+                {
+                    "type": "Owl",
+                    "cost": 750,
+                    "description": "buho"
+                },
+                {
+                    "type": "Eagle",
+                    "cost": 800,
+                    "description": "aguila"
+                },
+                {
+                    "type": "Hawk",
+                    "cost": 850,
+                    "description": "halcon"
+                },
+                {
+                    "type": "Falcon",
+                    "cost": 900,
+                    "description": "falcon"
+                },
+                {
+                    "type": "Raven",
+                    "cost": 950,
+                    "description": "cuervo"
+                },
+                {
+                    "type": "Swan",
+                    "cost": 1000,
+                    "description": "cisne"
+                },
+                {
+                    "type": "Peacock",
+                    "cost": 1050,
+                    "description": "pavo real"
+                },
+                {
+                    "type": "Flamingo",
+                    "cost": 1100,
+                    "description": "flamenco"
+                },
+                {
+                    "type": "Tiger",
+                    "cost": 1150,
+                    "description": "tigre"
+                },
+                {
+                    "type": "Lion",
+                    "cost": 1200,
+                    "description": "león"
+                }
+                
+            ],
+            "creatures": [
+                {
+                    "type": "Fire Creature",
+                    "cost": 100,
+                    "description": "hongo ardiente que alberga una Criatura mistica de fuego"
+                },
+                {
+                    "type": "Water Creature",
+                    "cost": 150,
+                    "description": "Este hongo gotea constantemente agua, senalando la presencia de una Criatura acuatica"
+                },
+                {
+                    "type": "Earth Creature",
+                    "cost": 120,
+                    "description": "Robusto y cubierto de tierra, este hongo contiene una Criatura de la naturaleza"
+                },
+                {
+                    "type": "Air Creature",
+                    "cost": 130,
+                    "description": "Ligero como una pluma, este hongo parece flotar en el aire, indicando una Criatura del viento en su interior"
+                },
+                {
+                    "type": "Mystic Creature",
+                    "cost": 200,
+                    "description": "Radiante y misterioso, este hongo contiene una Criatura mágica de poder desconocido"
+                },
+                {
+                    "type": "Spirit Creature",
+                    "cost": 250,
+                    "description": "Criatura divina"
+                },
+                {
+                    "type": "Dragon Creature",
+                    "cost": 300,
+                    "description": "Criatura de dragón"
+                },
+                {
+                    "type": "Demon Creature",
+                    "cost": 350,
+                    "description": "Criatura demoniaca"
+                },
+                {
+                    "type": "Beast Creature",
+                    "cost": 400,
+                    "description": "Criatura bestial"
+                },
+                {
+                    "type": "Fairy Creature",
+                    "cost": 450,
+                    "description": "Criatura fada"
+                },
+                {
+                    "type": "Goblin Creature",
+                    "cost": 500,
+                    "description": "Criatura goblin"
+                },
+                {
+                    "type": "Orc Creature",
+                    "cost": 550,
+                    "description": "Criatura orco"
+                },
+                {
+                    "type": "Skeleton Creature",
+                    "cost": 600,
+                    "description": "Criatura esqueleto"
+                },
+                {
+                    "type": "Zombie Creature",   
+                    "cost": 650,
+                    "description": "Criatura zombi"
+                },
+                {
+                    "type": "Vampire Creature",
+                    "cost": 700,
+                    "description": "Criatura vamp"
+                },
+                {
+                    "type": "Werewolf Creature",
+                    "cost": 750,
+                    "description": "Criatura lobo"
+                },
+                {
+                    "type": "Cyclops Creature",
+                    "cost": 800,
+                    "description": "Criatura cyclops"
+                },
+                {
+                    "type": "Golem Creature",
+                    "cost": 850,
+                    "description": "Criatura golem"
+                },
+                {
+                    "type": "Giant Creature",
+                    "cost": 900,
+                    "description": "Criatura gigante"
+                },
+                {
+                    "type": "Hydra Creature",
+                    "cost": 950,
+                    "description": "Criatura Hydra"
+                },
+                {
+                    "type": "Phoenix Creature",
+                    "cost": 1000,
+                    "description": "Criatura fiel"
+                },
+                {
+                    "type": "Troll Creature",
+                    "cost": 1050,
+                    "description": "Criatura trol"
+                },
+                {
+                    "type": "Dragonfly Creature",
+                    "cost": 1100,
+                    "description": "Criatura araña"
+                }   
+            ], 
+            "eggs": [
+                {
+                    "type": "Fire Egg",
+                    "cost": 100,
+                    "description": "huevo ardiente que alberga una Criatura mística de fuego"
+                },
+                {
+                    "type": "Water Egg",
+                    "cost": 150,
+                    "description": "Este huevo gotea constantemente agua, señalando la presencia de una Criatura acuática"
+                },
+                {
+                    "type": "Earth Egg",
+                    "cost": 120,
+                    "description": "Robusto y cubierto de tierra, este huevo contiene una Criatura de la naturaleza"
+                },
+                {
+                    "type": "Air Egg",
+                    "cost": 130,
+                    "description": "Ligero como una pluma, este huevo parece flotar en el aire, indicando una Criatura del viento en su interior"
+                },
+                {
+                    "type": "Mystic Egg",
+                    "cost": 200,
+                    "description": "Radiante y misterioso, este huevo contiene una Criatura mágica de poder desconocido"
+                },
+                {
+                    "type": "Dark Egg",
+                    "cost": 220,
+                    "description": "Envuelto en sombras, este huevo esconde una Criatura de la oscuridad"
+                },
+                {
+                    "type": "Light Egg",
+                    "cost": 220,
+                    "description": "Brillante y puro, este huevo alberga una Criatura de luz"
+                },
+                {
+                    "type": "Crystal Egg",
+                    "cost": 250,
+                    "description": "huevo de cristal que contiene una Criatura misteriosa"
+                },
+                {
+                    "type": "Lightning Egg",
+                    "cost": 300,
+                    "description": "huevo de rayos que contiene una Criatura de electricidad"
+                }
+            ]
+        },  
+        "mine": {
+            "ores": [
+              {
+                "type": "Iron Ore",
+                "cost": 20,
+                "description": "Un mineral de hierro común, utilizado en la forja de armas y armaduras."
+              },
+              {
+                "type": "Gold Ore",
+                "cost": 50,
+                "description": "Un mineral de oro raro, valorado por su uso en joyería y artesanía."
+              },
+              {
+                "type": "Silver Ore",
+                "cost": 35,
+                "description": "Un mineral de plata, utilizado tanto en acuñación de monedas como en ornamentación."
+              },
+              {
+                "type": "Copper Ore",
+                "cost": 25,
+                "description": "Un mineral de cobre, utilizado en la fabricación de herramientas y utensilios."
+              },
+              {
+                "type": "Tin Ore",
+                "cost": 30,
+                "description": "Un mineral de estaño, utilizado en la fabricación de aleaciones y soldaduras."
+              },
+              {
+                "type": "Lead Ore",
+                "cost": 40,
+                "description": "Un mineral de plomo, utilizado en la fabricación de baterías y protección contra la radiación."
+              },
+              {
+                "type": "Platinum Ore",
+                "cost": 60,
+                "description": "Un mineral de platino, valorado por su rareza y resistencia a la corrosión."
+              },
+              {
+                "type": "Titanium Ore",
+                "cost": 70,
+                "description": "Un mineral de titanio, utilizado en la fabricación de aviones y prótesis médicas."
+              },
+              {
+                "type": "Mithril Ore",
+                "cost": 80,
+                "description": "Un mineral de mithril, valorado por su ligereza y resistencia a la magia."
+              },
+              {
+                "type": "Adamantite Ore",
+                "cost": 90,
+                "description": "Un mineral de adamantita, utilizado en la fabricación de armaduras y armas mágicas."
+              },
+              {
+                "type": "Obsidian Ore",
+                "cost": 100,
+                "description": "Un mineral de obsidiana, valorado por su dureza y resistencia al calor."
+              }
+            ],
+            "gems": [
+              {
+                "type": "Ruby",
+                "cost": 100,
+                "description": "Un rubí brillante, preciado por su belleza y rareza."
+              },
+              {
+                "type": "Emerald",
+                "cost": 120,
+                "description": "Una esmeralda verde vívida, conocida por su lujosa estética."
+              },
+              {
+                "type": "Sapphire",
+                "cost": 110,
+                "description": "Un zafiro azul, símbolo de nobleza y verdad."
+              },
+              {
+                "type": "Diamond",
+                "cost": 150,
+                "description": "Un diamante incoloro, conocido por su dureza y brillo."
+              },
+              {
+                "type": "Topaz",
+                "cost": 130,
+                "description": "Un topacio amarillo, valorado por su belleza y rareza."
+              },
+              {
+                "type": "Amethyst",
+                "cost": 140,
+                "description": "Una amatista púrpura, conocida por su belleza y rareza."
+              },
+              {
+                "type": "Aquamarine",
+                "cost": 160,
+                "description": "Una aguamarina azul, conocida por su belleza y rareza."
+              },
+              {
+                "type": "Opal",
+                "cost": 170,
+                "description": "Una ópalo multicolor, conocida por su belleza y rareza."
+              },
+              {
+                "type": "Pearl",
+                "cost": 180,
+                "description": "Una perla blanca, conocida por su belleza y rareza."
+              },
+              {
+                "type": "Turquoise",
+                "cost": 190,
+                "description": "Una turquesa azul, conocida por su belleza y rareza."
+              },
+              {
+                "type": "Garnet",
+                "cost": 200,
+                "description": "Un granate rojo, conocido por su belleza y rareza."
+              },
+              {
+                "type": "Citrine",
+                "cost": 210,
+                "description": "Una citrina amarilla, conocida por su belleza y rareza."
+              },
+              {
+                "type": "Peridot",
+                "cost": 220,
+                "description": "Un peridoto verde, conocido por su belleza y rareza."
+              },
+              {
+                "type": "Jade",
+                "cost": 230,
+                "description": "Una jade verde, conocida por su belleza y rareza."
+              },
+              {
+                "type": "Lapis Lazuli",
+                "cost": 240,
+                "description": "Un lapislázuli azul, conocido por su belleza y rareza."
+              },
+              {
+                "type": "Sodalite",
+                "cost": 250,
+                "description": "Una sodalita blanca, conocida por su belleza y rareza."
+              }
+            ],
+            "equipment": [
+              {
+                "type": "Pickaxe",
+                "cost": 25,
+                "description": "Un pico básico, esencial para cualquier minero."
+              },
+              {
+                "type": "Drill",
+                "cost": 75,
+                "description": "Un taladro avanzado, permite una minería más eficiente."
+              },
+              {
+                "type": "Dynamite",
+                "cost": 50,
+                "description": "Dinamita para operaciones de minería a gran escala."
+              },
+              {
+                "type": "Lantern",
+                "cost": 30,
+                "description": "Una linterna para iluminar túneles oscuros y peligrosos."
+              },
+              {
+                "type": "Helmet",
+                "cost": 40,
+                "description": "Un casco de seguridad, protege la cabeza de caídas y derrumbes."
+              },
+              {
+                "type": "Gloves",
+                "cost": 35,
+                "description": "Guantes resistentes, protegen las manos de cortes y abrasiones."
+              },
+              {
+                "type": "Boots",
+                "cost": 45,
+                "description": "Botas de trabajo, protegen los pies de lesiones y quemaduras."
+              },
+              {
+                "type": "Armor",
+                "cost": 100,
+                "description": "Una armadura de mithril, ligera y resistente a la magia."
+              },
+              {
+                "type": "Shield",
+                "cost": 75,
+                "description": "Un escudo de adamantita, resistente y duradero."
+              },
+              {
+                "type": "Sword",
+                "cost": 150,
+                "description": "Una espada de obsidiana, afilada y resistente al calor."
+              },
+              {
+                "type": "Bow",
+                "cost": 125,
+                "description": "Un arco de ébano, potente y preciso."
+              },
+              {
+                "type": "Crossbow",
+                "cost": 175,
+                "description": "Una ballesta de ébano, letal a larga distancia."
+              },
+              {
+                "type": "Staff",
+                "cost": 200,
+                "description": "Un bastón de cristal, canaliza la energía mágica."
+              },
+              {
+                "type": "Wand",
+                "cost": 225,
+                "description": "Una varita de cuarzo, lanza hechizos elementales."
+              },
+              {
+                "type": "Tome",
+                "cost": 250,
+                "description": "Un tomo de pergamino, contiene conocimientos arcanos."
+              },
+              {
+                "type": "Orb",
+                "cost": 275,
+                "description": "Un orbe de amatista, amplifica la energía mágica."
+              },
+              {
+                "type": "Ring",
+                "cost": 300,
+                "description": "Un anillo de rubí, protege contra maleficios y maldiciones."
+              },
+              {
+                "type": "Amulet",
+                "cost": 325,
+                "description": "Un amuleto de zafiro, otorga protección y buena fortuna."
+              },
+              {
+                "type": "Necklace",
+                "cost": 350,
+                "description": "Un collar de esmeralda, aumenta la resistencia y la vitalidad."
+              },
+              {
+                "type": "Earring",
+                "cost": 375,
+                "description": "Un pendiente de diamante, aumenta la inteligencia y la sabiduría."
+              },
+              {
+                "type": "Bracelet",
+                "cost": 400,
+                "description": "Una pulsera de topacio, aumenta la destreza y la agilidad."
+              },
+              {
+                "type": "Belt",
+                "cost": 425,
+                "description": "Un cinturón de platino, aumenta la fuerza y la resistencia."
+              },
+              {
+                "type": "Crown",
+                "cost": 450,
+                "description": "Una corona de oro, otorga poder y dominio sobre los demás."
+              },
+              {
+                "type": "Tiara",
+                "cost": 475,
+                "description": "Una tiara de plata, otorga sabiduría y conocimiento."
+              },
+              {
+                "type": "Diadem",
+                "cost": 500,
+                "description": "Un diadema de cobre, otorga protección y seguridad."
+              },
+              {
+                "type": "Circlet",
+                "cost": 525,
+                "description": "Un aro de hierro, otorga resistencia y durabilidad."
+              },
+              {
+                "type": "Cape",
+                "cost": 550,
+                "description": "Una capa de seda, otorga invisibilidad y sigilo."
+              },
+              {
+                "type": "Cloak",
+                "cost": 575,
+                "description": "Una capa de lana, otorga resistencia y protección."
+              },
+              {
+                "type": "Robe",
+                "cost": 600,
+                "description": "Una túnica de algodón, otorga sabiduría y conocimiento."
+              },
+              {
+                "type": "Gown",
+                "cost": 625,
+                "description": "Un vestido de lino, otorga belleza y gracia."
+              },
+              {
+                "type": "Dress",
+                "cost": 650,
+                "description": "Un vestido de seda, otorga elegancia y distinción."
+              }
+            ],
+            "metals": [
+              {
+                "type": "Iron Ingot",
+                "cost": 30,
+                "description": "Lingote de hierro, resultado de fundir mineral de hierro."
+              },
+              {
+                "type": "Gold Ingot",
+                "cost": 60,
+                "description": "Lingote de oro, altamente valorado en el mercado."
+              },
+              {
+                "type": "Silver Ingot",
+                "cost": 45,
+                "description": "Lingote de plata, utilizado en diversos oficios y comercios."
+              },
+              {
+                "type": "Copper Ingot",
+                "cost": 35,
+                "description": "Lingote de cobre, utilizado en la fabricación de herramientas y utensilios."
+              },
+              {
+                "type": "Tin Ingot",
+                "cost": 40,
+                "description": "Lingote de estaño, utilizado en la fabricación de aleaciones y soldaduras."
+              },
+              {
+                "type": "Lead Ingot",
+                "cost": 50,
+                "description": "Lingote de plomo, utilizado en la fabricación de baterías y protección contra la radiación."
+              },
+              {
+                "type": "Platinum Ingot",
+                "cost": 70,
+                "description": "Lingote de platino, valorado por su rareza y resistencia a la corrosión."
+              },
+              {
+                "type": "Titanium Ingot",
+                "cost": 80,
+                "description": "Lingote de titanio, utilizado en la fabricación de aviones y prótesis médicas."
+              },
+              {
+                "type": "Mithril Ingot",
+                "cost": 90,
+                "description": "Lingote de mithril, valorado por su ligereza y resistencia a la magia."
+              },
+              {
+                "type": "Adamantite Ingot",
+                "cost": 100,
+                "description": "Lingote de adamantita, utilizado en la fabricación de armaduras y armas mágicas."
+              },
+              {
+                "type": "Obsidian Ingot",
+                "cost": 110,
+                "description": "Lingote de obsidiana, valorado por su dureza y resistencia al calor."
+              },
+              {
+                "type": "Ruby Ingot",
+                "cost": 120,
+                "description": "Lingote de rubí, utilizado en la fabricación de joyería y artesanía."
+              },
+              {
+                "type": "Emerald Ingot",
+                "cost": 130,
+                "description": "Lingote de esmeralda, utilizado en la fabricación de joyería y artesanía."
+              },
+              {
+                "type": "Sapphire Ingot",
+                "cost": 140,
+                "description": "Lingote de zafiro, utilizado en la fabricación de joyería y artesanía."
+              },
+              {
+                "type": "Diamond Ingot",
+                "cost": 150,
+                "description": "Lingote de diamante, utilizado en la fabricación de joyería y artesanía."
+              },
+              {
+                "type": "Topaz Ingot",
+                "cost": 160,
+                "description": "Lingote de topacio, utilizado en la fabricación de joyería y artesanía."
+              },
+              {
+                "type": "Amethyst Ingot",
+                "cost": 170,
+                "description": "Lingote de amatista, utilizado en la fabricación de joyería y artesanía."
+              },
+              {
+                "type": "Aquamarine Ingot",
+                "cost": 180,
+                "description": "Lingote de aguamarina, utilizado en la fabricación de joyería y artesanía."
+              },
+              {
+                "type": "Opal Ingot",
+                "cost": 190,
+                "description": "Lingote de ópalo, utilizado en la fabricación de joyería y artesanía."
+              },
+              {
+                "type": "Pearl Ingot",
+                "cost": 200,
+                "description": "Lingote de perla, utilizado en la fabricación de joyería y artesanía."
+              },
+              {
+                "type": "Turquoise Ingot",
+                "cost": 210,
+                "description": "Lingote de turquesa, utilizado en la fabricación de joyería y artesanía."
+              },
+              {
+                "type": "Garnet Ingot",
+                "cost": 220,
+                "description": "Lingote de garnet, utilizado en la fabricación de joyería y artesanía."
+              },
+              {
+                "type": "Citrine Ingot",
+                "cost": 230,
+                "description": "Lingote de citrina, utilizado en la fabricación de joyería y artesanía."
+              },
+              {
+                "type": "Peridot Ingot",
+                "cost": 240,
+                "description": "Lingote de peridoto, utilizado en la fabricación de joyería y artesanía."
+              },
+              {
+                "type": "Jade Ingot",
+                "cost": 250,
+                "description": "Lingote de jade, utilizado en la fabricación de joyería y artesanía."
+              },
+              {
+                "type": "Lapis Lazuli Ingot",
+                "cost": 260,
+                "description": "Lingote de lapislázuli, utilizado en la fabricación de joyería y artesanía."
+              },
+              {
+                "type": "Sodalite Ingot",
+                "cost": 270,
+                "description": "Lingote de sodalita, utilizado en la fabricación de joyería y artesanía."
+              }
+            ]
+        }, 
+        "tools": {
+            "basic": {
+                "swords": [
+                    {
+                        "type": "Sword",
+                        "cost": 50,
+                        "description": "Una espada corta"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 75,
+                        "description": "Una espada larga"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 100,
+                        "description": "Una espada de dos manos"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 125,
+                        "description": "Una espada de combate"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 150,
+                        "description": "Una espada de batalla"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 175,
+                        "description": "Una espada de guerra"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 200,
+                        "description": "Una espada de asesino"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 225,
+                        "description": "Una espada de campeón"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 250,
+                        "description": "Una espada de héroe"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 275,
+                        "description": "Una espada de leyenda"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 300,
+                        "description": "Una espada de dios"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 325,
+                        "description": "Una espada de demonio"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 350,
+                        "description": "Una espada de dragón"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 375,
+                        "description": "Una espada de titán"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 400,
+                        "description": "Una espada de diablo"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 425,
+                        "description": "Una espada de ángel"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 450,
+                        "description": "Una espada de rey"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 475,
+                        "description": "Una espada de emperador"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 500,
+                        "description": "Una espada de dios"
+                    }
+                ],
+                "axes": [
+                    {
+                        "type": "Axe",
+                        "cost": 60,
+                        "description": "Un hacha de batalla"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 80,
+                        "description": "Un hacha doble"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 100,
+                        "description": "Un hacha de combate"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 120,
+                        "description": "Un hacha de guerra"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 140,
+                        "description": "Un hacha de asesino"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 160,
+                        "description": "Un hacha de campeón"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 180,
+                        "description": "Un hacha de hechicero"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 200,
+                        "description": "Un hacha de leyenda"
+                    },
+
+                    {
+                        "type": "Axe",
+                        "cost": 220,
+                        "description": "Un hacha de dios"
+                    },
+
+                    {
+                        "type": "Axe",
+                        "cost": 240,
+                        "description": "Un hacha de dragón"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 260,
+                        "description": "Un hacha de titán"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 280,
+                        "description": "Un hacha de diablo"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 300,
+                        "description": "Un hacha de ángel"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 320,
+                        "description": "Un hacha de rey"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 340,
+                        "description": "Un hacha de emperador"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 360,
+                        "description": "Un hacha de dios"
+                    }
+                ],
+                "spears": [
+                    {
+                        "type": "Spear",
+                        "cost": 65,
+                        "description": "Una lanza ligera"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 85,
+                        "description": "Una lanza pesada"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 105,
+                        "description": "Una lanza de combate"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 125,
+                        "description": "Una lanza de guerra"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 145,
+                        "description": "Una lanza de asesino"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 165,
+                        "description": "Una lanza de campeón"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 185,
+                        "description": "Una lanza de hechicero"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 205,
+                        "description": "Una lanza de leyenda"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 225,
+                        "description": "Una lanza de dios"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 245,
+                        "description": "Una lanza de dragón"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 265,
+                        "description": "Una lanza de titán"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 285,
+                        "description": "Una lanza de diablo"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 305,
+                        "description": "Una lanza de ángel"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 325,
+                        "description": "Una lanza de rey"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 345,
+                        "description": "Una lanza de emperador"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 365,
+                        "description": "Una lanza de dios"
+                    }
+                ]
+            },
+            "advanced": {
+                "swords": [
+                    {
+                        "type": "Sword",
+                        "cost": 150,
+                        "description": "Espada de acero valiriano"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 175,
+                        "description": "Espada élfica encantada"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 200,
+                        "description": "Espada de fuego infernal"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 225,
+                        "description": "Espada de luz divina"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 250,
+                        "description": "Espada de hielo"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 275,
+                        "description": "Espada de trueno"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 300,
+                        "description": "Espada de oscuridad"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 325,
+                        "description": "Espada de luz"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 350,
+                        "description": "Espada de sombras"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 375,
+                        "description": "Espada de tormenta"
+                    }
+                ],
+                "axes": [
+                    {
+                        "type": "Axe",
+                        "cost": 160,
+                        "description": "Hacha de guerra enana"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 180,
+                        "description": "Hacha mágica de hielo"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 200,
+                        "description": "Hacha de fuego infernal"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 220,
+                        "description": "Hacha de luz divina"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 240,
+                        "description": "Hacha de trueno"
+                    }
+                ],
+                "spears": [
+                    {
+                        "type": "Spear",
+                        "cost": 165,
+                        "description": "Lanza de dragón"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 185,
+                        "description": "Lanza celestial"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 205,
+                        "description": "Lanza de hielo"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 225,
+                        "description": "Lanza de trueno"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 245,
+                        "description": "Lanza de fuego"
+                    }
+                ]
+            },
+            "epic": {
+                "swords": [
+                    {
+                        "type": "Sword",
+                        "cost": 250,
+                        "description": "Espada del destino"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 275,
+                        "description": "Espada de luz eterna"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 300,
+                        "description": "Espada de oscuridad eterna"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 325,
+                        "description": "Espada de tormenta eterna"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 350,
+                        "description": "Espada de trueno eterno"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 375,
+                        "description": "Espada de hielo eterno"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 400,
+                        "description": "Espada de fuego eterno"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 425,
+                        "description": "Espada de luz eterna"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 450,
+                        "description": "Espada de oscuridad eterna"
+                    },
+                    {
+                        "type": "Sword",
+                        "cost": 475,
+                        "description": "Espada de tormenta eterna"
+                    }
+                ],
+                "axes": [
+                    {
+                        "type": "Axe",
+                        "cost": 260,
+                        "description": "Hacha de las mil almas"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 280,
+                        "description": "Hacha de eclipse"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 300,
+                        "description": "Hacha de tormenta eterna"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 320,
+                        "description": "Hacha de trueno eterno"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 340,
+                        "description": "Hacha de hielo eterno"
+                    },
+                    {
+                        "type": "Axe",
+                        "cost": 360,
+                        "description": "Hacha de fuego eterno"
+                    }
+                ],
+                "spears": [
+                    {
+                        "type": "Spear",
+                        "cost": 265,
+                        "description": "Lanza del fénix"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 285,
+                        "description": "Lanza de oscuridad profunda"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 305,
+                        "description": "Lanza de tormenta eterna"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 325,
+                        "description": "Lanza de trueno eterno"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 345,
+                        "description": "Lanza de hielo eterno"
+                    },
+                    {
+                        "type": "Spear",
+                        "cost": 365,
+                        "description": "Lanza de fuego eterno"
+                    }
+                ]
+            }
+        }
+    } 
+}
