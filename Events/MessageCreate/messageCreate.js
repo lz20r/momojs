@@ -1,8 +1,9 @@
 require("../../Handlers/commands");
 const { EmbedBuilder } = require("discord.js");
-const momo = require("../../core/client");
+const momo = require("../../core/client");  
+const connection = require("../../momoDB/momoDB");
 const RAM_GET = require('../../core/RAM/RAMGetter');
-const connection = RAM_GET.getDBConnection();
+// const connection = RAM_GET.getDBConnection();
 const { Prefix } = require("../../config.json");
 momo.on("messageCreate", async (message) => {
     if (message.channel.type === 'dm' || message.author.bot) { 
@@ -27,9 +28,9 @@ momo.on("messageCreate", async (message) => {
         message.channel.send({ embeds: [embed] }); 
     } 
     if (!message.content.startsWith(prefix)) {
-        return; 
+        return;    
     }
-
+ 
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     let cmd = momo.commands.find((c) => c.name === command || (c.alias && c.alias.includes(command)));
@@ -52,6 +53,6 @@ momo.on("messageCreate", async (message) => {
                 .setTimestamp();
             logChannel.send({ content: `<@!1033160523044376616>`, embeds: [logEmbed], allowedMentions: { repliedUser: false } })
         } 
-    }
+    } 
 });
  
