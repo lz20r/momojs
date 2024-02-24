@@ -1,6 +1,6 @@
 const mysql = require('mysql2');  
 const momo = require("../core/client");
-const RAM_SET = require('../core/RAM/RAMSetter');
+// const RAM_SET = require('../core/RAM/RAMSetter');
 
 module.exports = async function() {
     try {
@@ -14,7 +14,7 @@ module.exports = async function() {
         connection.connect(); 
         console.log(`💭  [INFO]: ${momo.user.username} Connected to MySQLDB`); 
         setTimeout(() => {
-            RAM_SET.setDBConnection(connection);
+            // RAM_SET.setDBConnection(connection);
             return connection;
         }, 500);
     } catch (error) {
