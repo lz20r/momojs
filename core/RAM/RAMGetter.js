@@ -7,3 +7,4 @@ class RAM_GET {
 }
 
 module.exports = new RAM_GET();
+  
