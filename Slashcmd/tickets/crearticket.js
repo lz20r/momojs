@@ -56,7 +56,7 @@ module.exports = {
                                 })
                                 .setThumbnail(momo.user.displayAvatarURL())
                         ],  
-                        ephemeral: true
+                        ephemeral: true 
                     });  
                     await buttonInteraction.deferReply({ embeds: [embed]}); 
                } catch (error) {
