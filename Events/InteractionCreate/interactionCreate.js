@@ -1,5 +1,5 @@
 const momo = require("../../core/client");
-const createTicket = require("../../Slashcmd/tickets/createTicket");
+const createTicket = require("../../Slashcmd/tickets/ticket");
 const { ModalBuilder, ModalSubmitInteraction, ChatInputCommandInteraction, ActionRowBuilder, TextInputBuilder, TextInputStyle } = require("discord.js");
 momo.on("interactionCreate", async(interaction) => {
     
@@ -14,6 +14,4 @@ momo.on("interactionCreate", async(interaction) => {
     } catch(e) {
         console.error(e);
     }   
-});
-git config --global user.email "zhiyaonaiara@gmail.com"
-  git config --global user.name "lz20r"
+}); 

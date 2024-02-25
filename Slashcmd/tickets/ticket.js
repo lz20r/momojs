@@ -2,7 +2,7 @@ const { SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, Butt
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('createticket')
+        .setName('ticket')
         .setDescription('Crea un ticket'),
 
     async run(momo, interaction) {
@@ -13,7 +13,7 @@ module.exports = {
                 .setLabel("Create Ticket")
                 .setStyle(ButtonStyle.Primary),
 
-            new ButtonBuilder()
+            new ButtonBuilder() 
                 .setCustomId(`close`)
                 .setLabel("Close Ticket")
                 .setStyle(ButtonStyle.Danger)
@@ -100,23 +100,17 @@ module.exports = {
                         ],
                     });
                 
-                    await modalInteraction.reply({ content: `Ticket creado: <#${ticketChannel.id}>`, ephemeral: true });
+                    await modalInteraction.reply({ 
+                        content: `Ticket creado: <#${ticketChannel.id}>. Ticket para ${modalInteraction.user.username}. Ticket creado por razón: ${reason}`,
+                        ephemeral: true });
                 } catch (error) {
                     console.error(error);
-                    await modalInteraction.reply({ content: 'Hubo un error al crear el ticket.', ephemeral: true });
+                    await modalInteraction.reply({ content: 'Hubo un error al crear el ticket para ' + modalInteraction.user.username + '. Por favor, intenta de nuevo.', ephemeral: true });
                 }
             } else if (modalInteraction.customId === 'closeTicketModal') {
                 const reason = modalInteraction.fields.getTextInputValue('ticketReason');
-
-                try {
-                    await modalInteraction.channel.delete();
-    
-                
-                    await modalInteraction.reply({ content: `Ticket cerrado: ${reason}`, ephemeral: true });
-                } catch (error) {
-                    console.error(error);
-                    await modalInteraction.reply({ content: 'Hubo un error al cerrar el ticket.', ephemeral: true });
-                } 
+                await modalInteraction.reply({ content: `Ticket Cerrado: <#${ticketChannel.id}> Por razón: ${reason}` + reason, ephemeral: true }); 
+                await modalInteraction.channel.send(`Ticket Closed: ${reason}`); 
             }
         });
     }
